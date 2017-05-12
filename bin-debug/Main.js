@@ -47,6 +47,39 @@ var Main = (function (_super) {
             circle.x = targetPoint.x;
             circle.y = targetPoint.y;
         }
+        /**
+         * 触摸来移动对象
+         */
+        // 设定两个偏移量
+        var offsetX;
+        var offsetY;
+        //画一个0x123456颜色的圆
+        var circle = new egret.Shape();
+        circle.graphics.beginFill(0x123456);
+        circle.graphics.drawCircle(25, 25, 25);
+        circle.graphics.endFill();
+        this.addChild(circle);
+        circle.touchEnabled = true;
+        // 手指按到屏幕,触发startMove方法
+        circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, this);
+        // 手指离开屏幕,触发stopMove方法
+        circle.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, this);
+        function startMove(e) {
+            // 计算手指和圆的距离
+            offsetX = e.stageX - circle.x;
+            offsetY = e.stageY - circle.y;
+            // 监听TOUCH_MOVE事件 手指在屏幕上移动,会触发onMove方法
+            this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
+        }
+        function stopMove(e) {
+            console.log(22);
+            // 手指离开屏幕,移除手指移动的监听
+            this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
+        }
+        function onMove(e) {
+            circle.x = e.stageX - offsetX;
+            circle.y = e.stageY - offsetY;
+        }
     };
     return Main;
 }(egret.DisplayObjectContainer));
