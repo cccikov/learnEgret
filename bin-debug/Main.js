@@ -16,6 +16,16 @@ var Main = (function (_super) {
     Main.prototype.onAddToStage = function (event) {
         var _myGrid = new MyGrid();
         this.addChild(_myGrid);
+        var shp = new egret.Shape();
+        this.addChild(shp);
+        shp.graphics.beginFill(0x00ff00);
+        shp.graphics.drawRect(0, 0, 100, 100);
+        shp.graphics.endFill();
+        shp.x = 100;
+        shp.y = 100;
+        setTimeout(function () {
+            shp.anchorOffsetX = 50;
+        }, 2000);
     };
     return Main;
 }(egret.DisplayObjectContainer));
