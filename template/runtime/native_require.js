@@ -6,6 +6,7 @@ var game_file_list = [
 	"libs/modules/egret/egret.native.js",
 	"polyfill/promise.js",
 	"bin-debug/Main.js",
+	"bin-debug/MyGrid.js",
 	//----auto game_file_list end----
 ];
 

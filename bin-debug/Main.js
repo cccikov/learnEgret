@@ -9,8 +9,15 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
-        return _super.call(this) || this;
+        var _this = _super.call(this) || this;
+        _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onAddToStage, _this);
+        return _this;
     }
+    Main.prototype.onAddToStage = function (event) {
+        var _myGrid = new MyGrid();
+        this.addChild(_myGrid);
+    };
     return Main;
 }(egret.DisplayObjectContainer));
 __reflect(Main.prototype, "Main");
+//# sourceMappingURL=Main.js.map
