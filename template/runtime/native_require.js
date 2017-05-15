@@ -5,8 +5,11 @@ var game_file_list = [
 	"libs/modules/egret/egret.js",
 	"libs/modules/egret/egret.native.js",
 	"polyfill/promise.js",
+	"bin-debug/Drag.js",
 	"bin-debug/Main.js",
+	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
+	"bin-debug/Trans.js",
 	//----auto game_file_list end----
 ];
 
