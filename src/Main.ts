@@ -6,6 +6,16 @@ class Main extends egret.DisplayObjectContainer {
     }
 
     private onAddToStage(event:egret.Event){
+        this.stage.scaleMode = egret.StageScaleMode.NO_SCALE;
+        console.log(this.stage.stageWidth);
+
+        // 背景
+        var bg: egret.Shape = new egret.Shape();
+        bg.graphics.beginFill(0xffffff);
+        bg.graphics.drawRect(0, 0, this.stage.stageWidth, this.stage.stageHeight);
+        bg.graphics.endFill();
+        this.addChild(bg);
+
         var _myGrid:MyGrid = new MyGrid();
         this.addChild(_myGrid);
 
