@@ -18,7 +18,6 @@ class HitTest extends egret.DisplayObjectContainer {
         this.addChild(shp);
 
 
-
         var circle: egret.Shape = new egret.Shape();
         circle.graphics.beginFill(0x00ff00);
         circle.x = 300;
@@ -28,6 +27,7 @@ class HitTest extends egret.DisplayObjectContainer {
         // Shape对象的width,height并不会对Shape造成影响;drawCircle,drawRect等里面的绘图坐标感觉是相对于该对象的x,y
         this.addChild(circle);
         console.log(circle.x, circle.y);
+		
 
         var that = this;
         new DragObj(shp, this, function() {

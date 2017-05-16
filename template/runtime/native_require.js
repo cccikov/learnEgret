@@ -11,6 +11,7 @@ var game_file_list = [
 	"bin-debug/Main.js",
 	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
+	"bin-debug/Text.js",
 	"bin-debug/Trans.js",
 	//----auto game_file_list end----
 ];
@@ -44,7 +45,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "HitTest",
+		entryClassName: "CccText",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 320,
