@@ -6,6 +6,8 @@ var game_file_list = [
 	"libs/modules/egret/egret.native.js",
 	"polyfill/promise.js",
 	"bin-debug/Drag.js",
+	"bin-debug/DragObj.js",
+	"bin-debug/HitTest.js",
 	"bin-debug/Main.js",
 	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
@@ -42,9 +44,9 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "Main",
+		entryClassName: "HitTest",
 		frameRate: 30,
-		scaleMode: "showAll",
+		scaleMode: "noScale",
 		contentWidth: 320,
 		contentHeight: 640,
 		showPaintRect: false,

@@ -15,6 +15,7 @@ var Trans = (function () {
         square.y = square.anchorOffsetY + 250;
         square.graphics.endFill();
         theContainer.addChild(square);
+        // 这些变化要好注重锚点位置.
         var btn1 = new egret.TextField();
         btn1.text = "尺寸变化";
         btn1.textColor = 0x333333;

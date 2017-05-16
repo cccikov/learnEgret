@@ -27,12 +27,12 @@ var Drag = (function () {
         theContainer.addChild(square);
         // 增加圆形的触摸监听
         circle.touchEnabled = true;
-        circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, theContainer);
-        circle.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, theContainer);
+        circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, this);
+        circle.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, this);
         // 增加方形的触摸监听
         square.touchEnabled = true;
-        square.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, theContainer);
-        square.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, theContainer);
+        square.addEventListener(egret.TouchEvent.TOUCH_BEGIN, startMove, this);
+        square.addEventListener(egret.TouchEvent.TOUCH_END, stopMove, this);
         function startMove(e) {
             // 把手指触摸的对象记录下来(是圆是方)
             draggedObject = e.currentTarget;
@@ -43,12 +43,12 @@ var Drag = (function () {
             console.log(theContainer.getChildIndex(circle), theContainer.getChildIndex(square));
             theContainer.addChild(draggedObject); //因为addChild会改变index,所以在这里添加多一次,就变成是最上面了
             // 增加舞台的移动手指监听
-            theContainer.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, theContainer);
+            theContainer.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
         }
         function stopMove(e) {
             console.log(22);
             //手指离开屏幕，移除手指移动的监听
-            theContainer.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, theContainer);
+            theContainer.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE, onMove, this);
         }
         function onMove(e) {
             //通过计算手指在屏幕上的位置，计算当前对象的坐标，达到跟随手指移动的效果
