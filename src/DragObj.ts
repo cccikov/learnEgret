@@ -1,4 +1,4 @@
-// 拖拽对象
+// 拖拽对象 将对象变成可拖拽
 class DragObj {
 	public constructor(theDragObj,theStage,fn) {
 		let the = theDragObj;

@@ -52,13 +52,6 @@ class Main extends egret.DisplayObjectContainer {
             circle.x = targetPoint.x;
             circle.y = targetPoint.y;
         }
-
-        new Drag(this);
-        new Move(this);
-        new Trans(this);
-
-
-
     }
 
 }

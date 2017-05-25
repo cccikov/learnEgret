@@ -46,7 +46,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "TextEventDemo",
+		entryClassName: "Trans",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 320,

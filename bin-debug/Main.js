@@ -55,9 +55,6 @@ var Main = (function (_super) {
             circle.x = targetPoint.x;
             circle.y = targetPoint.y;
         }
-        new Drag(this);
-        new Move(this);
-        new Trans(this);
     };
     return Main;
 }(egret.DisplayObjectContainer));

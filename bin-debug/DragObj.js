@@ -1,7 +1,7 @@
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
-// 拖拽对象
+// 拖拽对象 将对象变成可拖拽
 var DragObj = (function () {
     function DragObj(theDragObj, theStage, fn) {
         var the = theDragObj;

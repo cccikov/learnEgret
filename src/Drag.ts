@@ -1,8 +1,9 @@
-class Drag {
-	public constructor(theContainer) {
-        this.init(theContainer);
+class Drag extends egret.DisplayObjectContainer{
+	public constructor() {
+        super();
+        this.init();
 	}
-    private init(theContainer):void{
+    private init():void{
         /**
          * 触摸来移动对象
          */
@@ -13,15 +14,16 @@ class Drag {
         //圆
         var circle:egret.Shape = new egret.Shape();
         circle.graphics.beginFill(0x456123);
-        circle.graphics.drawCircle(25,25,25);
+        circle.graphics.drawCircle(50,50,25);
         circle.graphics.endFill();
-        theContainer.addChild(circle);
         // 方
         var square:egret.Shape = new egret.Shape();
         square.graphics.beginFill(0x0123ff);
         square.graphics.drawRect(0,0,100,100);
         square.graphics.endFill();
-        theContainer.addChild(square);
+
+        this.addChild(square);
+        this.addChild(circle);
         // 增加圆形的触摸监听
         circle.touchEnabled = true;
         circle.addEventListener(egret.TouchEvent.TOUCH_BEGIN,startMove,this);
@@ -38,14 +40,14 @@ class Drag {
             offsetX = e.stageX - draggedObject.x;
             offsetY = e.stageY - draggedObject.y;
             // 把触摸的对象放在显示列表的顶层
-            console.log(theContainer.getChildIndex(circle),theContainer.getChildIndex(square));
-            theContainer.addChild(draggedObject);//因为addChild会改变index,所以在这里添加多一次,就变成是最上面了
+            console.log(this.getChildIndex(circle),this.getChildIndex(square));
+            this.addChild(draggedObject);//因为addChild会改变index,所以在这里添加多一次,就变成是最上面了
             // 增加舞台的移动手指监听
-            theContainer.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
+            this.stage.addEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
         }
         function stopMove(e:egret.TouchEvent) {console.log(22);
            //手指离开屏幕，移除手指移动的监听
-           theContainer.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
+           this.stage.removeEventListener(egret.TouchEvent.TOUCH_MOVE,onMove,this);
         }
         function onMove(e:egret.TouchEvent):void{
            //通过计算手指在屏幕上的位置，计算当前对象的坐标，达到跟随手指移动的效果

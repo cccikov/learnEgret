@@ -14,7 +14,7 @@ var TextEventDemo = (function (_super) {
         tx.textFlow = new Array({
             text: "这段文字有链接",
             style: {
-                "href": "event:text event triggered" //"href":"http://www.baidu.com"
+                "href": "event:text event triggered" //"href":"http://www.baidu.com" 
             }
         }, {
             text: "n这段文字无连接",
