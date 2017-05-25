@@ -48,4 +48,3 @@ var CccText = (function (_super) {
     return CccText;
 }(egret.DisplayObjectContainer));
 __reflect(CccText.prototype, "CccText");
-//# sourceMappingURL=Text.js.map

@@ -51,4 +51,3 @@ var Trans = (function () {
     return Trans;
 }());
 __reflect(Trans.prototype, "Trans");
-//# sourceMappingURL=Trans.js.map

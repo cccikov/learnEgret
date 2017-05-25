@@ -28,4 +28,3 @@ var DragObj = (function () {
     return DragObj;
 }());
 __reflect(DragObj.prototype, "DragObj");
-//# sourceMappingURL=DragObj.js.map

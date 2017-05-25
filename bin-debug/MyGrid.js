@@ -30,4 +30,3 @@ var MyGrid = (function (_super) {
     return MyGrid;
 }(egret.Shape));
 __reflect(MyGrid.prototype, "MyGrid");
-//# sourceMappingURL=MyGrid.js.map

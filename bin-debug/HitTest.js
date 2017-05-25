@@ -49,4 +49,3 @@ var HitTest = (function (_super) {
     return HitTest;
 }(egret.DisplayObjectContainer));
 __reflect(HitTest.prototype, "HitTest");
-//# sourceMappingURL=HitTest.js.map

@@ -30,4 +30,3 @@ var Move = (function () {
     return Move;
 }());
 __reflect(Move.prototype, "Move");
-//# sourceMappingURL=Move.js.map
