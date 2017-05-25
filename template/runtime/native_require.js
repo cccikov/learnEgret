@@ -14,6 +14,7 @@ var game_file_list = [
 	"bin-debug/Text.js",
 	"bin-debug/TextEventDemo.js",
 	"bin-debug/Trans.js",
+	"bin-debug/TxInput.js",
 	//----auto game_file_list end----
 ];
 
@@ -46,7 +47,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "Trans",
+		entryClassName: "TxInput",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 320,

@@ -8,7 +8,7 @@ class TextEventDemo extends egret.DisplayObjectContainer{
                 "href":"event:text event triggered"//"href":"http://www.baidu.com" 
             }
         },{
-            text:"n这段文字无连接",
+            text:"\n这段文字无连接",
             style:{
                 "textColor": 0xff0000
             }
