@@ -8,6 +8,10 @@ var game_file_list = [
 	"bin-debug/Drag.js",
 	"bin-debug/DragObj.js",
 	"bin-debug/HitTest.js",
+	"bin-debug/learnEvent/Boy.js",
+	"bin-debug/learnEvent/DateEvent.js",
+	"bin-debug/learnEvent/Girl.js",
+	"bin-debug/learnEvent/SampleDate.js",
 	"bin-debug/Main.js",
 	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
@@ -47,7 +51,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "TxInput",
+		entryClassName: "SampleDate",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 320,
