@@ -2,6 +2,8 @@ class SampleDate extends egret.DisplayObjectContainer{
     public constructor(){
         super();
 
+        console.log(egret.Capabilities.renderMode);
+
         var boy:Boy = new Boy();
         boy.name = "ccc";
 

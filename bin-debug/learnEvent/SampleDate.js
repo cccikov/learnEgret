@@ -10,6 +10,7 @@ var SampleDate = (function (_super) {
     __extends(SampleDate, _super);
     function SampleDate() {
         var _this = _super.call(this) || this;
+        console.log(egret.Capabilities.renderMode);
         var boy = new Boy();
         boy.name = "ccc";
         var girl = new Girl();
