@@ -13,7 +13,8 @@ var Boy = (function (_super) {
     }
     Boy.prototype.order = function () {
         // 创建约会事件对象
-        var dateEvent = new DateEvent(DateEvent.DATE);
+        // var dateEvent:DateEvent = new DateEvent(DateEvent.DATE);//实质new DateEvent("约会",false,false)
+        var dateEvent = new DateEvent("约会", false, false);
         // 添加对应的约会信息
         dateEvent._year = 2017;
         dateEvent._month = 8;

@@ -4,7 +4,8 @@ class Boy extends egret.Sprite{
     }
     public order():void{
         // 创建约会事件对象
-        var dateEvent:DateEvent = new DateEvent(DateEvent.DATE);
+        // var dateEvent:DateEvent = new DateEvent(DateEvent.DATE);//实质new DateEvent("约会",false,false)
+        var dateEvent:DateEvent = new DateEvent("约会",false,false);
         // 添加对应的约会信息
         dateEvent._year = 2017;
         dateEvent._month = 8;

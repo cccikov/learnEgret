@@ -16,11 +16,15 @@ var SampleDate = (function (_super) {
         var girl = new Girl();
         girl.name = "tomato";
         // 注册监听器
-        boy.addEventListener(DateEvent.DATE, girl.getDate, girl);
+        boy.addEventListener(DateEvent.DATE, girl.getDate, _this); //监听器是girl.getDate方法 , 由girl 创建, 由boy注册
+        boy.addEventListener("约会", function (evt) {
+            console.log(evt);
+        }, _this, false, 9); //冒泡阶段,优先级
         // 男朋友发送要求
         boy.order(); //触发事件
+        console.log(boy.willTrigger(DateEvent.DATE));
         // 约会邀请完成后,移除监听器
-        boy.removeEventListener(DateEvent.DATE, girl.getDate, girl);
+        boy.removeEventListener(DateEvent.DATE, girl.getDate, _this);
         return _this;
     }
     return SampleDate;

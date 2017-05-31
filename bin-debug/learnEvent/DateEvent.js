@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+// 这是一个事件类，用于构造事件对象
 var DateEvent = (function (_super) {
     __extends(DateEvent, _super);
     function DateEvent(type, bubbles, cancelable) {
@@ -21,5 +22,5 @@ var DateEvent = (function (_super) {
     }
     return DateEvent;
 }(egret.Event));
-DateEvent.DATE = "约会";
+DateEvent.DATE = "约会"; //boy class里面new DateEvent(DateEvent.DATE),这里实质new DateEvent("约会",false,false)
 __reflect(DateEvent.prototype, "DateEvent");
