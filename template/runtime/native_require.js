@@ -4,15 +4,22 @@ var game_file_list = [
     //----auto game_file_list start----
 	"libs/modules/egret/egret.js",
 	"libs/modules/egret/egret.native.js",
+	"libs/modules/eui/eui.js",
+	"libs/modules/game/game.js",
+	"libs/modules/res/res.js",
+	"libs/modules/tween/tween.js",
+	"libs/modules/socket/socket.js",
 	"polyfill/promise.js",
 	"bin-debug/DragObj.js",
-	"bin-debug/Main.js",
+	"bin-debug/learnEvent/TouchEventTest.js",
 	"bin-debug/HitTest.js",
 	"bin-debug/learnEvent/Boy.js",
+	"bin-debug/learnEvent/CancelTouchEventTest.js",
 	"bin-debug/learnEvent/DateEvent.js",
 	"bin-debug/learnEvent/Girl.js",
 	"bin-debug/learnEvent/SampleDate.js",
 	"bin-debug/Drag.js",
+	"bin-debug/Main.js",
 	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
 	"bin-debug/Text.js",
@@ -51,7 +58,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "SampleDate",
+		entryClassName: "CancelTouchEventTest",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 320,
