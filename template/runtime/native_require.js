@@ -16,6 +16,7 @@ var game_file_list = [
 	"bin-debug/learnBitmap/BitmapTest.js",
 	"bin-debug/learnBitmap/LoadImg.js",
 	"bin-debug/learnBitmap/LoadingUI.js",
+	"bin-debug/learnBitmap/NineGrid.js",
 	"bin-debug/learnEvent/Boy.js",
 	"bin-debug/learnEvent/CancelTouchEventTest.js",
 	"bin-debug/learnEvent/DateEvent.js",
@@ -25,6 +26,7 @@ var game_file_list = [
 	"bin-debug/Main.js",
 	"bin-debug/Move.js",
 	"bin-debug/MyGrid.js",
+	"bin-debug/StageBg.js",
 	"bin-debug/Text.js",
 	"bin-debug/TextEventDemo.js",
 	"bin-debug/Trans.js",
@@ -61,11 +63,11 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "LoadImg",
+		entryClassName: "NineGrid",
 		frameRate: 30,
 		scaleMode: "noScale",
-		contentWidth: 320,
-		contentHeight: 640,
+		contentWidth: 640,
+		contentHeight: 320,
 		showPaintRect: false,
 		showFPS: false,
 		fpsStyles: "x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9",

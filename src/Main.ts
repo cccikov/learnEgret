@@ -1,3 +1,4 @@
+// 刚入门的几个效果
 class Main extends egret.DisplayObjectContainer {
 
     public constructor() {

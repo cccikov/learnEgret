@@ -1,12 +1,9 @@
 {
-    "groups": [
-        {
-            "keys": "bg_jpg,egret_icon_png,description_json,plane1,plane2,plane3,bullet",
-            "name": "preload"
-        }
-    ],
-    "resources": [
-        {
+    "groups": [{
+        "keys": "bg_jpg,egret_icon_png,description_json,plane1,plane2,plane3,bullet,test",
+        "name": "preload"
+    }],
+    "resources": [{
             "name": "bg_jpg",
             "type": "image",
             "url": "assets/bg.jpg"
@@ -35,10 +32,14 @@
             "name": "description_json",
             "type": "json",
             "url": "config/description.json"
-        },{
-            "name":"bullet",
-            "type":"sound",
-            "url":"assets/bullet.mp3"
+        }, {
+            "name": "bullet",
+            "type": "sound",
+            "url": "assets/bullet.mp3"
+        }, {
+            "name": "test",
+            "type": "image",
+            "url": "assets/test.png"
         }
     ]
 }

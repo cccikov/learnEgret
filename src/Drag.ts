@@ -1,3 +1,4 @@
+// 拖拽
 class Drag extends egret.DisplayObjectContainer{
 	public constructor() {
         super();

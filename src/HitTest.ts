@@ -1,3 +1,4 @@
+// 碰撞检测
 class HitTest extends egret.DisplayObjectContainer {
 
     public constructor() {

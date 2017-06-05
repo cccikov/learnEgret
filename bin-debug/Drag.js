@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+// 拖拽
 var Drag = (function (_super) {
     __extends(Drag, _super);
     function Drag() {

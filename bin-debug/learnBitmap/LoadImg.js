@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+// 加载图片
 var LoadImg = (function (_super) {
     __extends(LoadImg, _super);
     function LoadImg() {

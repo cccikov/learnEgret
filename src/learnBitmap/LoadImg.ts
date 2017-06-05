@@ -1,3 +1,4 @@
+// 加载图片
 class LoadImg extends egret.DisplayObjectContainer {
 
     /**

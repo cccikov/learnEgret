@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+// 碰撞检测
 var HitTest = (function (_super) {
     __extends(HitTest, _super);
     function HitTest() {

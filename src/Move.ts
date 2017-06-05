@@ -1,3 +1,4 @@
+// 平移
 class Move extends egret.DisplayObjectContainer {
 	public constructor() {
         super();

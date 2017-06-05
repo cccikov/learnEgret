@@ -6,6 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+// 刚入门的几个效果
 var Main = (function (_super) {
     __extends(Main, _super);
     function Main() {
