@@ -1,0 +1,35 @@
+{
+    "file": "./assets/bg.jpg",
+    "frames": {
+        "bg1": {
+            "x": 0,
+            "y": 221,
+            "w": 640,
+            "h": 860,
+            "offX": 0,
+            "offY": 0,
+            "sourceW": 640,
+            "sourceH": 860
+        },
+        "bg2": {
+            "x": 281,
+            "y": 530,
+            "w": 359,
+            "h": 385,
+            "offX": 0,
+            "offY": 0,
+            "sourceW": 359,
+            "sourceH": 385
+        },
+        "bg3": {
+            "x": 281,
+            "y": 530,
+            "w": 359,
+            "h": 385,
+            "offX": 100,
+            "offY": 100,
+            "sourceW": 359,
+            "sourceH": 385
+        }
+    }
+}

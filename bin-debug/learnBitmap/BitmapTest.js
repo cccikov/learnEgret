@@ -41,6 +41,11 @@ var BitmapTest = (function (_super) {
         img3.x = 10;
         img3.y = 330;
         this.addChild(img3);
+        // 纹理采集
+        var txtr = RES.getRes("bg.bg2");
+        var img4 = new egret.Bitmap(txtr);
+        img4.y = 440;
+        this.addChild(img4);
     };
     return BitmapTest;
 }(egret.DisplayObjectContainer));

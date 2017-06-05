@@ -34,5 +34,10 @@ class BitmapTest extends egret.DisplayObjectContainer{
         img3.y = 330;
         this.addChild(img3);
 
+        // 纹理采集
+        var txtr:egret.Texture = RES.getRes("bg.bg2");
+        var img4:egret.Bitmap = new egret.Bitmap(txtr);
+        img4.y = 440;
+        this.addChild(img4);
     }
 }

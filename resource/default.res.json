@@ -1,6 +1,6 @@
 {
     "groups": [{
-        "keys": "bg_jpg,egret_icon_png,description_json,plane1,plane2,plane3,bullet,test",
+        "keys": "bg_jpg,egret_icon_png,description_json,plane1,plane2,plane3,bullet,test,bg",
         "name": "preload"
     }],
     "resources": [{
@@ -40,6 +40,10 @@
             "name": "test",
             "type": "image",
             "url": "assets/test.png"
+        }, {
+            "name": "bg",
+            "type": "sheet",
+            "url": "bg.json"
         }
     ]
 }
