@@ -1,4 +1,4 @@
-// 加载图片 位图纹理 纹理填充方式
+// 加载图片 位图纹理 纹理填充方式 纹理收集
 class BitmapTest extends egret.DisplayObjectContainer{
     constructor(){
         super();
