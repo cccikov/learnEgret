@@ -11,6 +11,8 @@ class BitmapTest extends egret.DisplayObjectContainer{
     private onload():void{
         var img:egret.Bitmap = new egret.Bitmap();
         img.texture = RES.getRes("test");
+        img.x = 10;
+        img.y = 10;
         this.addChild(img);
 
         // 拉伸
@@ -18,7 +20,8 @@ class BitmapTest extends egret.DisplayObjectContainer{
         img2.texture = RES.getRes("test");
         img2.width *= 3;
         img2.height *= 2;
-        img2.y = 110;
+        img2.x = 10;
+        img2.y = 120;
         this.addChild(img2);
 
         // 重复填充
@@ -27,7 +30,9 @@ class BitmapTest extends egret.DisplayObjectContainer{
         img3.fillMode = egret.BitmapFillMode.REPEAT;//填充方式
         img3.width *= 3;
         img3.height *= 2;
-        img3.y = 320;
+        img3.x = 10;
+        img3.y = 330;
         this.addChild(img3);
+
     }
 }
