@@ -10,8 +10,8 @@ var game_file_list = [
 	"libs/modules/tween/tween.js",
 	"libs/modules/socket/socket.js",
 	"polyfill/promise.js",
-	"bin-debug/learnEvent/Girl.js",
 	"bin-debug/Drag.js",
+	"bin-debug/DragObj.js",
 	"bin-debug/HitTest.js",
 	"bin-debug/learnBitmap/BitmapTest.js",
 	"bin-debug/learnBitmap/LoadImg.js",
@@ -20,7 +20,7 @@ var game_file_list = [
 	"bin-debug/learnEvent/Boy.js",
 	"bin-debug/learnEvent/CancelTouchEventTest.js",
 	"bin-debug/learnEvent/DateEvent.js",
-	"bin-debug/DragObj.js",
+	"bin-debug/learnEvent/Girl.js",
 	"bin-debug/learnEvent/SampleDate.js",
 	"bin-debug/learnEvent/TouchEventTest.js",
 	"bin-debug/Main.js",
@@ -63,7 +63,7 @@ egret_native.egretStart = function () {
     var option = {
         //以下为自动修改，请勿修改
         //----auto option start----
-		entryClassName: "NineGrid",
+		entryClassName: "BitmapTest",
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 640,
