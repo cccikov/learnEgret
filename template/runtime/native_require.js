@@ -17,6 +17,7 @@ var game_file_list = [
 	"bin-debug/learnBitmap/LoadImg.js",
 	"bin-debug/learnBitmap/LoadingUI.js",
 	"bin-debug/learnBitmap/NineGrid.js",
+	"bin-debug/learnBitmap/ScreenShot.js",
 	"bin-debug/learnEvent/Boy.js",
 	"bin-debug/learnEvent/CancelTouchEventTest.js",
 	"bin-debug/learnEvent/DateEvent.js",
